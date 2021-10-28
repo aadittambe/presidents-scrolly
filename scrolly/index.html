@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta author="Aadit Tambe">
+	<title>U.S. Presidents &mdash; 1976 to present</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/scroll-style.css">
+</head>
+
+<body>
+
+
+	<div class="container-fluid" id="scroll">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class='scroll-text'>
+					<div class='step'>
+						<h2>1976 &mdash; Jimmy Carter </h2>
+						<p>Carter, a Democrat, won 55.2% of the electoral vote, defeating Republican opponent Gerald
+							Ford.</p>
+					</div>
+					<div class='step'>
+						<h2>1980 &mdash; Ronald Reagan </h2>
+						<p>Reagan, a Republican, won 90.9% of the electoral vote, defeating Demoratic opponent Jimmy
+							Carter.</p>
+					</div>
+					<div class='step'>
+						<h2>1984 &mdash; Ronald Reagan </h2>
+						<p>Reagan, a Republican, won 97.6% of the electoral vote, defeating Demoratic opponent Walter
+							Mondale .</p>
+					</div>
+					<div class='step'>
+						<h2>1988 &mdash; George Bush </h2>
+						<p>Bush, a Republican, won 79.2% of the electoral vote, defeating Demoratic opponent Michael
+							Dukakis.</p>
+					</div>
+					<div class='step'>
+						<h2>1992 &mdash; William Clinton </h2>
+						<p>Clinton, a Democrat, won 68.8% of the electoral vote, defeating Republican opponent George
+							Bush.</p>
+					</div>
+					<div class='step'>
+						<h2>1996 &mdash; William Clinton </h2>
+						<p>Clinton, a Democrat, won 70.4% of the electoral vote, defeating Republican opponent Robert
+							Dole.</p>
+					</div>
+					<div class='step'>
+						<h2>2000 &mdash; George W. Bush </h2>
+						<p>Bush, a Republican, won 50.4% of the electoral vote, defeating Demoratic opponent Albert
+							Gore.</p>
+					</div>
+					<div class='step'>
+						<h2>2004 &mdash; George W. Bush </h2>
+						<p>Bush, a Republican, won 53.2% of the electoral vote, defeating Demoratic opponent John Kerry.
+						</p>
+					</div>
+					<div class='step'>
+						<h2>2008 &mdash; Barack Obama</h2>
+						<p>Bush, a Republican, won 53.2% of the electoral vote, defeating Republican opponent John
+							McCain.</p>
+					</div>
+					<div class='step'>
+						<h2>2012 &mdash; Barack Obama</h2>
+						<p>Bush, a Republican, won 61.7% of the electoral vote, defeating Republican opponent Mitt
+							Romney.</p>
+					</div>
+					<div class='step'>
+						<h2>2016 &mdash; Donald Trump</h2>
+						<p>Trump, a Republican, won 56.9% of the electoral vote, defeating Democratic opponent Hillary
+							Clinton.</p>
+					</div>
+					<div class='step'>
+						<h2>2016 &mdash; Joseph Biden</h2>
+						<p>Biden, a Democrat, won 56.88% of the electoral vote, defeating Republican opponent Donald
+							Trump.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-graphic">
+				<div class='scroll-graphic'>
+
+					<div data-step='1' class="scroll-graphic-tab d-block">
+						<img class="img-fluid" src="images/1.png" />
+					</div>
+
+					<div data-step='2' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/2.png" />
+					</div>
+
+					<div data-step='3' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/3.png" />
+					</div>
+
+					<div data-step='4' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/4.png" />
+					</div>
+
+					<div data-step='5' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/5.png" />
+					</div>
+					<div data-step='6' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/6.png" />
+					</div>
+					<div data-step='7' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/7.png" />
+					</div>
+					<div data-step='8' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/8.png" />
+					</div>
+					<div data-step='9' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/9.png" />
+					</div>
+					<div data-step='10' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/10.png" />
+					</div>
+					<div data-step='11' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/11.png" />
+					</div>
+					<div data-step='12' class="scroll-graphic-tab d-none">
+						<img class="img-fluid" src="images/12.png" />
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- D3-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js'></script>
+
+	<!-- Stickyfill.js-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js'></script>
+
+	<!-- Scrollama and intersection observer js files-->
+	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	<script src="https://unpkg.com/scrollama"></script>
+
+	<!-- jQuery, popper and bootstrap js files-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+		integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+		integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+		crossorigin="anonymous"></script>
+
+	<!-- app js file-->
+	<script src="js/viz.js"></script>
+
+
+</body>
+
+</html>
